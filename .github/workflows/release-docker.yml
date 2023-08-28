@@ -32,7 +32,7 @@ jobs:
           platforms: linux/arm64,linux/amd64
           push: true
           file: ./scripts/Dockerfile
-          tags: gosonic/sonic:latest,gosonic/sonic:${{github.ref_name}}
+          tags: lsilencej/sonic:latest,lsilencej/sonic:${{github.ref_name}}
           build-args: |
             SONIC_VERSION=${{github.ref_name}}
             BUILD_COMMIT=${{github.sha}}
